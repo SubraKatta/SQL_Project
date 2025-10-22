@@ -4,5 +4,5 @@ create table if not exists Employees (
     LastName varchar(50) not null,
     Email varchar(100) unique not null,
     HireDate date not null,
-    Salary decimal(10, 2) check (Salary >= 0)
+    Salary decimal(10, 4) check (Salary >= 0)
 );
